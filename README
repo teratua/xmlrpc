@@ -1,3 +1,17 @@
+Note: This fork has been modified for my own personal use-case to
+only encode and decode XML strings in accordance with the XML-RPC spec.
+All network-related features have been removed. You will need an external
+HTTP client and/or server to use this.
+The purpose of this fork is to update the encoding to UTF-8, to use
+strings instead of atoms for methodName attributes, and to remove the
+unused network-related code.
+Additionally there is now only one single eunit test, and erlang.mk is
+used to build in place of rebar.
+All other documentation in the project has been left as-is and should
+not be relied upon.
+
+--------------
+
 XML-RPC client and server for Erlang
 ====================================
 
@@ -17,6 +31,6 @@ Run 'make docs' to get edoc-generated HTML documentation under doc/.
 
 Get the latest version of this library at https://github.com/etnt/xmlrpc.
 
-The original author of this library was Joakim Grebenö. It is
-currently maintained by Torbjörn Törnkvist. Send questions and/or
+The original author of this library was Joakim GrebenÃ¶. It is
+currently maintained by TorbjÃ¶rn TÃ¶rnkvist. Send questions and/or
 suggestions to etnt@redhoterlang.com.
