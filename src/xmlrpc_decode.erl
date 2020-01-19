@@ -34,7 +34,7 @@
 -export([payload/1]).
 
 -include("log.hrl").
--include_lib("xmerl/include/xmerl.hrl").
+-include_lib("/usr/lib/erlang/lib/xmerl-1.3.22/include/xmerl.hrl").
 
 payload(Payload) ->
     case catch xmerl_scan:string(Payload) of
